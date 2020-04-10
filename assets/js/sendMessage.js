@@ -39,9 +39,14 @@ $(document).ready(function(){
                 },
                 success: function(data){
                     var msg = JSON.parse(data);
+
                     if(msg["success"] == "1"){
                         alert("Comment sent successfuly! If admin approves message it will be published.");
                     }
+                    else{
+                        alert(msg["msg"]);
+                    }
+
                     $("#name").val("");
                     $("#email").val("");
                     $("#message").val("");
