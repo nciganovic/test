@@ -1,8 +1,10 @@
 <?php
 
-    include_once("config/connection.php");
-    include_once("models/getItems.php");
-    include_once("models/getComments.php");
+session_start();
+
+include_once("config/connection.php");
+include_once("models/getItems.php");
+include_once("models/getApprovedComments.php");
 
 ?>
 
@@ -15,7 +17,9 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
+    <?php include_once("views/navbar.php"); ?>
         <div class="container">
+            
             
             <div class="row">
                 <div class="col-12">
