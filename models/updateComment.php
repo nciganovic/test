@@ -13,6 +13,5 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         echo json_encode($disapprovedComments);
     }catch(Exception $e){
         echo json_encode(["msg" => $e]);
-    }
-        
+    }   
 }
