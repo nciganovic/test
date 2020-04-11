@@ -12,6 +12,7 @@
       <?php else: ?>
       <a class="nav-item nav-link active" href="login.php">Login</a>
       <?php endif ?>
+      <a class="nav-item nav-link active" href="testDocs.pdf">Documentation</a>
     </div>
   </div>
 </nav>
