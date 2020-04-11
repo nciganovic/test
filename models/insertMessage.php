@@ -15,10 +15,9 @@ if(isset($_POST["name"]) && !empty($_POST["name"])){
             $message = trim($message);
 
             $nameRegex = '/^[A-z]{1,20}$/';
-            $emailRegex = '/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;
-                            :\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}
-                            \.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.
-                            )+[a-zA-Z]{2,}))$/';
+            $emailRegex = '/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.
+            ,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}
+            \.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/';
             
             $isNameValid = preg_match($nameRegex, $name);
             $isEmailValid = preg_match($emailRegex, $email);
